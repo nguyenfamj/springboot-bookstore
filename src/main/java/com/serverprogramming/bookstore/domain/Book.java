@@ -31,6 +31,10 @@ public class Book {
 		this.price = price;
 	}
 
+	public Long getId() {
+		return this.id;
+	}
+
 	public String getTitle() {
 		return this.title;
 	}
@@ -73,6 +77,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return this.title + ", " + this.author + ", " + this.isbn + ", " + this.year + ", " + this.price + " EUR";
+		return this.id + ": " + this.title + ", " + this.author + ", " + this.isbn + ", " + this.year + ", "
+				+ this.price + " EUR";
 	}
 }
